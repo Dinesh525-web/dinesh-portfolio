@@ -12,7 +12,7 @@
 
 ---
 
-[Portfolio Preview](assets/images/preview.png)
+![Portfolio Preview](assets/images/preview.png)
 
 ## ✨ Features
 
