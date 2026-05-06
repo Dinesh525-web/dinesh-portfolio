@@ -12,6 +12,8 @@
 
 ---
 
+[Portfolio Preview](assets/images/preview.png)
+
 ## ✨ Features
 
 - 🎨 **Dark theme** with electric violet accent and custom color system
@@ -61,20 +63,20 @@ dinesh-portfolio/
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Markup | Semantic HTML5 |
-| Styling | Pure CSS3 + Custom Properties |
-| Scripting | Vanilla JavaScript (ES6+) |
-| Fonts | Google Fonts (Syne, DM Mono, Instrument Serif) |
-| Hosting | Vercel |
-| Dev Tool | VS Code + Live Server |
+| Layer     | Technology                                     |
+| --------- | ---------------------------------------------- |
+| Markup    | Semantic HTML5                                 |
+| Styling   | Pure CSS3 + Custom Properties                  |
+| Scripting | Vanilla JavaScript (ES6+)                      |
+| Fonts     | Google Fonts (Syne, DM Mono, Instrument Serif) |
+| Hosting   | Vercel                                         |
+| Dev Tool  | VS Code + Live Server                          |
 
 ---
 
 ## 🚀 Run Locally
 
-### Using VS Code Live Server *(recommended)*
+### Using VS Code Live Server _(recommended)_
 
 ```bash
 # 1. Clone the repo
@@ -127,15 +129,15 @@ Or connect your GitHub repo to [vercel.com](https://vercel.com) for **automatic 
 
 ## 📄 Sections
 
-| # | Section | Description |
-|---|---------|-------------|
-| 01 | **Hero** | Name, role, stats, CTA buttons |
-| 02 | **About** | Bio, profile photo, contact info |
-| 03 | **Skills** | Languages, ML/DL, libraries, hardware |
-| 04 | **Projects** | 3 ML projects + 1 research publication |
-| 05 | **Experience** | Work & research timeline |
-| 06 | **Education** | Degrees, certifications, sports achievements |
-| 07 | **Contact** | Form + social links + resume download |
+| #   | Section        | Description                                  |
+| --- | -------------- | -------------------------------------------- |
+| 01  | **Hero**       | Name, role, stats, CTA buttons               |
+| 02  | **About**      | Bio, profile photo, contact info             |
+| 03  | **Skills**     | Languages, ML/DL, libraries, hardware        |
+| 04  | **Projects**   | 3 ML projects + 1 research publication       |
+| 05  | **Experience** | Work & research timeline                     |
+| 06  | **Education**  | Degrees, certifications, sports achievements |
+| 07  | **Contact**    | Form + social links + resume download        |
 
 ---
 
@@ -144,9 +146,9 @@ Or connect your GitHub repo to [vercel.com](https://vercel.com) for **automatic 
 All design tokens are in `css/variables.css`:
 
 ```css
---accent:    #7c6dfa;   /* primary colour  */
---accent-2:  #4fc3f7;   /* secondary colour */
---bg:        #0a0a0f;   /* background       */
+--accent: #7c6dfa; /* primary colour  */
+--accent-2: #4fc3f7; /* secondary colour */
+--bg: #0a0a0f; /* background       */
 ```
 
 ---
