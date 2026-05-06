@@ -1,0 +1,3 @@
+Place your files here:
+- Dinesh_Yadav_CV.pdf   ← your resume PDF
+- images/profile.jpg    ← your profile photo (optional)

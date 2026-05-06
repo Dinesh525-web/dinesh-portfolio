@@ -1,0 +1,115 @@
+/* ==============================
+   ANIMATIONS — css/animations.css
+   ============================== */
+
+/* ── Keyframes ── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.85); }
+}
+
+@keyframes scrollPulse {
+  0%   { opacity: 0; transform: scaleY(0); transform-origin: top; }
+  40%  { opacity: 1; transform: scaleY(1); transform-origin: top; }
+  70%  { opacity: 1; transform: scaleY(1); transform-origin: bottom; }
+  100% { opacity: 0; transform: scaleY(0); transform-origin: bottom; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ── Reveal on scroll ── */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+
+.reveal-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+
+/* ── Hero load animations (fire immediately) ── */
+.hero .reveal-up {
+  animation: fadeUp 0.8s var(--ease) forwards;
+  opacity: 0;
+}
+
+.hero .reveal-up.delay-1 { animation-delay: 0.15s; }
+.hero .reveal-up.delay-2 { animation-delay: 0.28s; }
+.hero .reveal-up.delay-3 { animation-delay: 0.40s; }
+.hero .reveal-up.delay-4 { animation-delay: 0.52s; }
+.hero .reveal-up.delay-5 { animation-delay: 0.65s; }
+
+/* Override for hero: once animated, stay visible */
+.hero .reveal-up.visible { opacity: 1; transform: none; }
+
+/* ── Stat counter shimmer ── */
+.stat-num {
+  background: linear-gradient(
+    90deg,
+    var(--accent) 0%,
+    var(--accent-2) 40%,
+    var(--accent) 80%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+/* ── Page load fade ── */
+body {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+/* ── Hover glow on cards ── */
+.project-card,
+.skill-card,
+.edu-card,
+.timeline-card {
+  will-change: transform;
+}
+
+/* ── Nav link underline ── */
+.nav-link::after {
+  transition: width 0.3s var(--ease);
+}
+
+/* ── Hamburger animation ── */
+.nav-hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.nav-hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile menu slide-in ── */
+.nav-links {
+  transition: transform 0.4s var(--ease), opacity 0.3s;
+}
