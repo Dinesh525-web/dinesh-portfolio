@@ -31,7 +31,7 @@
 
 ## 🖥️ Live Demo
 
-🔗 **[dinesh-portfolio.vercel.app](https://dinesh-portfolio-93wz8fpgm-dineshyadav2022-5001s-projects.vercel.app)**
+🔗 **[dinesh-portfolio.vercel.app](https://dinesh-portfolio1-lphgkhk2p-dineshyadav2022-5001s-projects.vercel.app/)**
 
 ---
 
